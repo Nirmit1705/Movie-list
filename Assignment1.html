@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Collection Manager</title>
+    <link rel="stylesheet" href="Assignment1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Collection Manager</h1>
+        
+        <div class="add-movie-form">
+            <h2>Add New Movie</h2>
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="genre" placeholder="Genre">
+            <input type="number" id="rating" placeholder="Rating (1-10)" min="1" max="10">
+            <input type="number" id="year" placeholder="Release Year">
+            <button onclick="addMovie()">Add Movie</button>
+        </div>
+
+        <div class="filters">
+            <input type="text" id="genreFilter" placeholder="Filter by genre">
+            <input type="number" id="yearFilter" placeholder="Filter by year">
+            <button onclick="filterMovies()">Filter</button>
+        </div>
+
+        <div class="stats">
+            <button onclick="findHighestRated()">Show Highest Rated</button>
+            <button onclick="showAllTitles()">Show All Titles</button>
+        </div>
+
+        <div id="movieList" class="movie-list">
+            <!-- Movies -->
+        </div>
+
+        <div id="results" class="results">
+            <!-- Filter results -->
+        </div>
+    </div>
+    <script src="Assignment1.js"></script>
+</body>
+</html>

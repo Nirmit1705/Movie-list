@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e;
+    color: #e2e2e2;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #c9d3ff;
+    text-align: center;
+}
+
+.add-movie-form, .filters, .stats {
+    background-color: #232741;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+
+input {
+    display: block;
+    width: 97%;
+    padding: 10px;
+    margin: 10px 0;
+    margin-right: 20px;
+    border: 2px solid #c9d3ff;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #2d3250;
+    color: #e2e2e2;
+}
+
+button {
+    background-color: #c9d3ff;
+    color: #1a1a2e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c9d3ff;
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.movie-card {
+    background-color: #232741;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.movie-card h3 {
+    color: #c9d3ff;
+    margin-top: 0;
+}
+
+.rating {
+    color: #c9d3ff;
+    font-weight: bold;
+}
+
+.results {
+    background-color: #232741;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
